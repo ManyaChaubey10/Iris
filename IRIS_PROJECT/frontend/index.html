@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Iris: Vision to Voice. An AI-powered system that converts American Sign Language gestures into speech in real time.">
+    <title>Iris | Vision to Voice</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background Shapes -->
+    <div class="background-container">
+        <div class="blob shape-1"></div>
+        <div class="blob shape-2"></div>
+        <div class="blob shape-3"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-panel">
+        <div class="nav-content container">
+            <a href="#" class="logo">
+                <div class="logo-icon-wrapper">
+                    <i class="fa-solid fa-eye logo-icon"></i>
+                </div>
+                <span class="logo-text">Iris</span>
+            </a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#how-it-works" class="nav-link">How it Works</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#demo" class="btn outline-btn nav-cta">Try Demo</a>
+            </div>
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-toggle"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-container">
+                <div class="hero-text fade-in-up">
+                    <div class="badge glass-badge"><i class="fa-solid fa-sparkles"></i> Vision to Voice</div>
+                    <h1 class="hero-title">Translating <span class="gradient-text">Sign Language</span> in Real-Time.</h1>
+                    <p class="hero-subtitle">Iris bridges the communication gap between the Deaf and hearing communities by converting American Sign Language gestures into spoken language instantly.</p>
+                    <div class="hero-actions">
+                        <a href="#demo" class="btn primary-btn glow-effect">
+                            <i class="fa-solid fa-play"></i> Live Demo
+                        </a>
+                        <a href="#about" class="btn secondary-btn glass-panel-inner">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-visual fade-in-up delay-1">
+                    <div class="iris-animation-container">
+                        <div class="iris-ring ring-1"></div>
+                        <div class="iris-ring ring-2"></div>
+                        <div class="iris-ring ring-3"></div>
+                        <div class="iris-core">
+                            <i class="fa-solid fa-eye text-accent"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section section-padding" id="about">
+            <div class="container">
+                <div class="section-header text-center fade-in-up">
+                    <h2 class="section-title">About The Project</h2>
+                    <p class="section-subtitle">Empowering seamless communication through advanced computer vision</p>
+                </div>
+                <div class="about-content glass-panel fade-in-up delay-1">
+                    <div class="about-text">
+                        <h3>Why Iris?</h3>
+                        <p>Communication is a fundamental human right. Yet, millions of Deaf and hard-of-hearing individuals face significant barriers in a hearing-dominant world. Iris is built to seamlessly translate American Sign Language (ASL) into spoken language, allowing for effortless, natural, and inclusive interactions.</p>
+                        <p>Our system leverages state-of-the-art AI to interpret complex hand signals and motion patterns, transforming them into immediate speech output.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item glass-panel-inner">
+                            <h4 class="stat-value">500K+</h4>
+                            <p class="stat-label">ASL Users in US</p>
+                        </div>
+                        <div class="stat-item glass-panel-inner">
+                            <h4 class="stat-value">Real-Time</h4>
+                            <p class="stat-label">Processing Speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works-section section-padding" id="how-it-works">
+            <div class="container">
+                <div class="section-header text-center fade-in-up">
+                    <h2 class="section-title">How It Works</h2>
+                    <p class="section-subtitle">A sophisticated pipeline running entirely in your browser</p>
+                </div>
+                <div class="steps-grid">
+                    <div class="step-card glass-panel fade-in-up">
+                        <div class="step-icon glass-panel-inner"><i class="fa-solid fa-camera"></i></div>
+                        <h3>1. Capture</h3>
+                        <p>Your webcam captures real-time video feed of your sign language gestures.</p>
+                    </div>
+                    <div class="step-card glass-panel fade-in-up delay-1">
+                        <div class="step-icon glass-panel-inner"><i class="fa-solid fa-hand-dots"></i></div>
+                        <h3>2. Track</h3>
+                        <p>MediaPipe precisely maps hand landmarks and spatial geometry.</p>
+                    </div>
+                    <div class="step-card glass-panel fade-in-up delay-2">
+                        <div class="step-icon glass-panel-inner"><i class="fa-solid fa-network-wired"></i></div>
+                        <h3>3. Analyze</h3>
+                        <p>Our ViViT transformer model decodes the temporal motion patterns.</p>
+                    </div>
+                    <div class="step-card glass-panel fade-in-up delay-3">
+                        <div class="step-icon glass-panel-inner"><i class="fa-solid fa-volume-high"></i></div>
+                        <h3>4. Speak</h3>
+                        <p>The recognized sign is converted to natural human speech instantly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Demo Section (The Core App) -->
+        <section class="demo-section section-padding" id="demo">
+            <div class="container">
+                <div class="section-header text-center fade-in-up">
+                    <h2 class="section-title">Live Demonstration</h2>
+                    <p class="section-subtitle">Experience the AI engine in real-time. Enable your camera to start.</p>
+                </div>
+
+                <div class="demo-split-layout">
+                    <!-- Left: Camera -->
+                    <div class="camera-panel glass-panel fade-in-up">
+                        <div class="video-container glass-panel-inner" id="videoContainer">
+                            <div class="camera-placeholder" id="placeholder">
+                                <i class="fa-solid fa-video-slash"></i>
+                                <p>Camera is off</p>
+                            </div>
+                            <video id="webcam" autoplay playsinline></video>
+                            
+                            <div class="status-indicator hidden" id="statusIndicator">
+                                <div class="pulse-dot"></div>
+                                <span>LIVE</span>
+                            </div>
+                        </div>
+                        <div class="controls">
+                            <button id="toggleCamera" class="btn primary-btn glow-effect">
+                                <i class="fa-solid fa-camera"></i>
+                                <span>Start Camera</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Right: Translation & Audio -->
+                    <div class="translation-panel glass-panel fade-in-up delay-1">
+                        <div class="translation-header">
+                            <h3><i class="fa-solid fa-language text-accent"></i> AI Output</h3>
+                        </div>
+                        
+                        <div class="output-text-container glass-panel-inner" id="translationBox">
+                            <div class="output-text" id="outputText">Waiting for clear signs...</div>
+                        </div>
+                        
+                        <!-- Voice Wavelength -->
+                        <div class="wavelength-container hidden" id="wavelengthBox">
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section section-padding" id="features">
+            <div class="container">
+                <div class="section-header fade-in-up text-center">
+                    <h2 class="section-title">Key Features</h2>
+                    <p class="section-subtitle">Built for accuracy, speed, and privacy</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-item fade-in-up">
+                        <i class="fa-solid fa-bolt feature-icon"></i>
+                        <div class="feature-info">
+                            <h4>Real-Time Detection</h4>
+                            <p>Barely perceptible latency between gesture execution and text output.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item fade-in-up delay-1">
+                        <i class="fa-solid fa-brain feature-icon"></i>
+                        <div class="feature-info">
+                            <h4>AI Recognition</h4>
+                            <p>Utilizing high-accuracy models trained on vast ASL datasets.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item fade-in-up delay-2">
+                        <i class="fa-solid fa-wave-square feature-icon"></i>
+                        <div class="feature-info">
+                            <h4>Gesture to Speech</h4>
+                            <p>Integrated TTS engine voices the translated signs out loud.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item fade-in-up delay-3">
+                        <i class="fa-solid fa-chart-line feature-icon"></i>
+                        <div class="feature-info">
+                            <h4>Spatio-Temporal Analysis</h4>
+                            <p>Understands motion over time, not just static hand shapes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technologies Section -->
+        <section class="technologies-section section-padding" id="technologies">
+            <div class="container">
+                <div class="section-header text-center fade-in-up">
+                    <h2 class="section-title">Technologies Used</h2>
+                    <p class="section-subtitle">Powered by modern open-source foundations</p>
+                </div>
+                <div class="tech-marquee-container glass-panel fade-in-up">
+                    <div class="tech-grid">
+                        <div class="tech-badge"><i class="fa-brands fa-python"></i> Python</div>
+                        <div class="tech-badge"><i class="fa-solid fa-eye"></i> OpenCV</div>
+                        <div class="tech-badge"><i class="fa-solid fa-hand-sparkles"></i> MediaPipe</div>
+                        <div class="tech-badge"><i class="fa-solid fa-fire"></i> PyTorch</div>
+                        <div class="tech-badge"><i class="fa-regular fa-face-smile"></i> Hugging Face</div>
+                        <div class="tech-badge"><i class="fa-solid fa-microchip"></i> ViViT Model</div>
+                        <div class="tech-badge"><i class="fa-solid fa-comment-dots"></i> Text-to-Speech</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Team Section -->
+        <section class="team-section section-padding" id="team">
+            <div class="container">
+                <div class="section-header text-center fade-in-up">
+                    <h2 class="section-title">The Visionaries</h2>
+                    <p class="section-subtitle">The team bridging the silence</p>
+                </div>
+                <div class="team-grid">
+                    <div class="team-card glass-panel fade-in-up">
+                        <div class="avatar-ph"><i class="fa-solid fa-user-astronaut"></i></div>
+                        <h4>Manya Chaubey</h4>
+                        <p>2nd Year CSE </p>
+                    </div>
+                    <div class="team-card glass-panel fade-in-up delay-1">
+                        <div class="avatar-ph"><i class="fa-solid fa-user-ninja"></i></div>
+                        <h4>Manmita Singh</h4>
+                        <p>2nd Year CSE</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer glass-panel">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <i class="fa-solid fa-eye logo-icon"></i>
+                    <span>Iris</span>
+                </a>
+                <p>Translating intention into connection.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#features">Features</a>
+                <a href="#demo">Demo</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Iris: Vision to Voice. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- App Logic -->
+    <script src="script.js"></script>
+</body>
+</html>
